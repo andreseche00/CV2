@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Professional Color Palette */
+    --platinum: 240 3% 86.3%; /* #dcdcdd */
+    --french-gray: 240 2% 77.8%; /* #c5c3c6 */
+    --outer-space: 208 5% 28.6%; /* #46494c */
+    --paynes-gray: 202 16% 35.7%; /* #4c5c68 */
+    --blue-munsell: 192 67% 37.3%; /* #1985a1 */
+    
+    /* Base Theme Colors */
+    --background: var(--platinum);
+    --foreground: var(--outer-space);
+
+    --card: 0 0% 100%;
+    --card-foreground: var(--outer-space);
+
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--outer-space);
+
+    --primary: var(--blue-munsell);
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: var(--french-gray);
+    --secondary-foreground: var(--outer-space);
+
+    --muted: var(--french-gray);
+    --muted-foreground: var(--paynes-gray);
+
+    --accent: var(--blue-munsell);
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: var(--french-gray);
+    --input: var(--french-gray);
+    --ring: var(--blue-munsell);
+
+    /* Professional Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--blue-munsell)) 0%, hsl(var(--paynes-gray)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.8), hsl(var(--platinum) / 0.9));
+    --gradient-overlay: linear-gradient(135deg, hsl(var(--outer-space) / 0.8), hsl(var(--paynes-gray) / 0.6));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--outer-space) / 0.1);
+    --shadow-card: 0 8px 32px hsl(var(--outer-space) / 0.15);
+    --shadow-floating: 0 12px 40px hsl(var(--blue-munsell) / 0.2);
+    
+    /* Typography */
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    
+    /* Spacing & Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.8);
+  }
+}
+
+@layer components {
+  /* Professional Animation Classes */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-floating);
+  }
+
+  .skill-bar {
+    position: relative;
+    height: 8px;
+    background: hsl(var(--muted));
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .skill-progress {
+    height: 100%;
+    background: var(--gradient-hero);
+    border-radius: 4px;
+    transition: width 1.5s ease-out;
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--gradient-hero);
+  }
+
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    background: hsl(var(--primary));
+    border: 3px solid hsl(var(--background));
+    border-radius: 50%;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .project-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
+    transition: var(--transition-smooth);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-floating);
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .card-gradient {
+    background: var(--gradient-card);
+  }
+
+  .overlay-gradient {
+    background: var(--gradient-overlay);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
