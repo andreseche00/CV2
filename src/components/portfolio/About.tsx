@@ -5,8 +5,8 @@ const About = () => {
   const services = [
     {
       icon: Cog,
-      title: "Industrial Process Automation",  
-      description: "Design, development and implementation of automated production lines using PLC, HMI and SCADA systems for enhanced productivity and reliability."
+      title: "Industrial Process Automation",
+      description: "Definition, design, development and implementation of automated production lines using PLC, HMI and SCADA systems for enhanced productivity and reliability."
     },
     {
       icon: Users,
@@ -15,8 +15,8 @@ const About = () => {
     },
     {
       icon: Lightbulb,
-      title: "Process Optimization",
-      description: "Data extraction and analysis from production lines for backup, safety and performance analysis (OEE), implementing continuous improvement strategies."
+      title: "Data Driven",
+      description: "Data extraction and analysis from production lines for backup, safety and performance analysis (OEE, KPIs), implementing continuous improvement strategies."
     },
     {
       icon: Globe,
