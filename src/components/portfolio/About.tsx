@@ -5,7 +5,7 @@ const About = () => {
   const services = [
     {
       icon: Cog,
-      title: "Industrial Process Automation",
+      title: "Industrial Process Automation",  
       description: "Design, development and implementation of automated production lines using PLC, HMI and SCADA systems for enhanced productivity and reliability."
     },
     {
