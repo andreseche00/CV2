@@ -126,27 +126,27 @@ const Experience = () => {
       company: "Bottero SPA",
       companyUrl: "https://www.bottero.com/",
       location: "Cuneo - Italy",
-      period: "March 2014 – February 2016",
+      period: "September 2011 – November 2015",
       achievements: [
-        "Developed cutting optimizer for flat glass production lines within PLC using recursive functions",
-        "Synchronized three cross-cutting heads and up to 12 longitudinal cutting heads",
+        "Developed cutting optimizer for flat glass production lines within PLC, using recursive functions",
+        "Synchronized three cross-cutting heads and up to 12 longitudinal cutting heads, to produce the customer's requested formats",
         "Installed flat glass production lines in more than six different countries",
         "Projects lasted approximately five months with excellent international client relationships"
       ],
       projects: [
         {
-          title: "Glass Cutting Optimization System",
-          description: "Advanced PLC-based cutting optimizer with recursive algorithms for maximum material efficiency",
-          role: "Senior Automation Engineer",
-          outcomes: ["Reduced material waste by 30%", "Optimized cutting patterns", "Synchronized multi-head operation"],
-          FinalCustomer: "Allianza Team USA",
+          title: "Multiple Float Glass automated production lines",
+          description: "Automated, non stop, float glass production line and production startup. Glass optimization and cutting system using PLC, that coordinates X-Y cutting heads, defect detection, measurenment systems, unloading systems, etc.  ",
+          role: "PLC + HMI Programmar and Installer",
+          outcomes: [],
+          FinalCustomer: "Vivix Vidrios Planos Brasil - Guardian Glass Thailand - SiseCam Glass Bulgaria - Xinyi Glass China - El Nasr Glass Egypt ",
         },
         {
-          title: "International Production Line Installation",
-          description: "Complete glass production lines installed across six countries with local team training",
-          role: "Installation Engineer & Trainer",
-          outcomes: ["100% successful installations", "Local team certification", "Strong client relationships"],
-          FinalCustomer: "Allianza Team USA",
+          title: "Ultra-thin Float Glass automated production line",
+          description: "Ultra-thin glass production lines for electronic devices usage",
+          role: "PLC + HMI Programmar and Installer",
+          outcomes: [],
+          FinalCustomer: "Xinyi Glass China",
         }
       ]
     }

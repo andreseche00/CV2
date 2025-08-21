@@ -1,4 +1,4 @@
-import { Heart, ArrowUp } from 'lucide-react';
+import { Heart, ArrowUp, Coffee } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -12,16 +12,16 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo and Copyright */}
           <div className="mb-6 md:mb-0">
-            <div className="text-2xl font-bold mb-2">AEE</div>
+            <div className="text-2xl font-bold mb-2 flex flex-col md:flex-row justify-between items-center">AE²</div>
             <p className="text-white/70">
-              © 2024 Andres Echeverri E. All rights reserved.
+              © 2025 Andres Echeverri E. All rights reserved. Updated 25/09
             </p>
           </div>
 
           {/* Made with love */}
           <div className="mb-6 md:mb-0">
             <p className="flex items-center gap-2 text-white/70">
-              Made with <Heart size={16} className="text-red-400" fill="currentColor" /> in Colombia
+              Made with <Heart size={16} className="text-red-400" fill="currentColor" /> & lots of <Coffee size={16} className="text-white-400" fill="currentColor" /> in Colombia
             </p>
           </div>
 
