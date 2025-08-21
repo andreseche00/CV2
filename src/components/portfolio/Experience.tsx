@@ -106,10 +106,10 @@ const Experience = () => {
       ],
       projects: [
         {
-          title: "Hydroelectric Plant Automation",
-          description: "Complete automation system for small hydroelectric power plants with remote monitoring",
-          role: "Automation Engineer",
-          outcomes: ["Automated start-up procedures", "Remote monitoring capabilities", "Increased efficiency by 25%"],
+          title: "1.5 MW Hydroelectric Generation Plant Automation",
+          description: "Complete automation system for small hydroelectric power plant with remote monitoring and reservoir level control",
+          role: "Lead Automation Engineer & Installer",
+          outcomes: ["Automated start-up and shut-off procedures", "Remote monitoring and command capabilities", "Reservoir level control to stabilize production", "powerline voltage control for disconnection"],
           FinalCustomer: "Allianza Team USA",
         },
         {
